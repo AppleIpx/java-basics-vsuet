@@ -1,4 +1,4 @@
-package draft;
+package LinkedList;
 
 import java.util.function.Predicate;
 
