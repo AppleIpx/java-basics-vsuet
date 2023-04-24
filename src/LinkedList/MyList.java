@@ -2,7 +2,7 @@ package LinkedList;
 
 import java.util.function.Predicate;
 
-public class MyList {
+public class MyList implements MyListable {
 
     private Node head;
 
@@ -89,7 +89,7 @@ public class MyList {
         }
     }
 
-    private int counting() {
+    public int counting() {
         int check = 0;
         Node currentNode = head;
         if (head == null) {
@@ -108,15 +108,12 @@ public class MyList {
         String result = "";
         Node currentNode = head;
         if (head == null) {
-            //System.out.println(head.data);
             result = String.valueOf(head.data);
             return result;
         }
         while (currentNode.next != null) {
             result += currentNode.data + "\n";
             currentNode = currentNode.next;
-            //System.out.println(currentNode.data);
-            //result += currentNode.data;
         }
         result += currentNode.data;
         return result;
