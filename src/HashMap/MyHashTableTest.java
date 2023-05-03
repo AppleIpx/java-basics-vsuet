@@ -64,6 +64,17 @@ class MyHashTableTest {
         myMap.put(3,"hahaha");
         myMap.put(25, "JavaTop");
         myMap.put(7, "TopTest");
-        assertEquals(10, myMap.size());
+
+        myMap.put(38, "pri");
+        myMap.put(4, "on");
+        myMap.put(29, "tw");
+        myMap.put(60, "si");
+        myMap.put(31, "hel");
+        myMap.put(58, "Na");
+        myMap.put(153, "go");
+        myMap.put(98,"ha");
+        myMap.put(20, "Java");
+        myMap.put(70, "Top");
+        assertEquals(20, myMap.size());
     }
 }
